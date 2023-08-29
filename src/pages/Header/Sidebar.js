@@ -8,39 +8,48 @@ import SubscriptionsIcon from '@mui/icons-material/Subscriptions';
 import NotificationsActiveIcon from '@mui/icons-material/NotificationsActive';
 
 
-export default [
-    {
-        name: 'Courses',
-        logo: (<DashboardIcon />)
-    },
-    {
-        name: 'Schools',
-        logo: (<SchoolIcon />)
-    },
-    {
-        name: 'Students',
-        logo: (<PeopleIcon />),
-    },
-    {
-        name: 'Subjects',
-        logo: (<MenuBookIcon />),
-    },
-    {
-        name: 'Materials',
-        logo: (<PushPinIcon />),
-    },
-    {
-        name: 'Videos',
-        logo: (<OndemandVideoIcon />),
-    },
-    {
-        name: 'Subscriptions',
-        logo: (<SubscriptionsIcon />),
-    },
-    {
-        name: 'Notifications',
-        logo: (<NotificationsActiveIcon />),
 
-    },
+const Sidebar  = [
+        {
+            name: 'Courses',
+            path: "/courses",
+            logo: (<DashboardIcon />)
+        },
+        {
+            name: 'Schools',
+            path: "/schools",
+            logo: (<SchoolIcon />)
+        },
+        {
+            name: 'Students',
+            path: "/students",
+            logo: (<PeopleIcon />),
+        },
+        {
+            name: 'Subjects',
+            path: "/subjects",
+            logo: (<MenuBookIcon />),
+        },
+        {
+            name: 'Materials',
+            path: "/materials",
+            logo: (<PushPinIcon />),
+        },
+        {
+            name: 'Videos',
+            path: "/videos",
+            logo: (<OndemandVideoIcon />),
+        },
+        {
+            name: 'Subscriptions',
+            path: "/subcriptions",
+            logo: (<SubscriptionsIcon />),
+        },
+        {
+            name: 'Notifications',
+            path: "/notifications",
+            logo: (<NotificationsActiveIcon />),
 
-];
+        }
+    ]
+export default Sidebar;

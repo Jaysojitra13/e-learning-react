@@ -104,11 +104,11 @@ const Header = () => {
   const authContext = useContext(AuthContext);
 
   // If token not found then redirect to login page
-  useEffect(() => {
-    if (!isAuthenticated()) {
-      navigate('/login');
-    }
-  }, []);
+  // useEffect(() => {
+  //   if (!isAuthenticated()) {
+  //     navigate('/login');
+  //   }
+  // }, []);
 
   const theme = useTheme();
   const [open, setOpen] = React.useState(false);
@@ -189,21 +189,23 @@ const Header = () => {
                     <ListItemIcon
                       sx={{
                         minWidth: 0,
-                        mr: open ? 3 : 'auto',
+                        mr: open ? 1 : 'auto',
                         justifyContent: 'center',
                       }}
                     >
-                      {obj.logo}
                     </ListItemIcon>
-
                     <ListItemText primary={obj.name} sx={{ opacity: open ? 1 : 0 }} />
               </ListItemButton>
+              
             </ListItem>
         ))}
       </List>
           <Divider />
         </Drawer>
+        // load actual component data
+
       </Box>
+      
     </ThemeProvider>
   );
 };
