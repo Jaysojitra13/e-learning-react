@@ -71,7 +71,7 @@ class Api {
     }
 
     if (this.isLoggedIn !== false && !(data && data.skipAuth)) {
-      headers['Authorization'] = 'Bearer ' + this.accessToken;
+      headers['Authorization'] = this.accessToken;
     }
 
     return headers;

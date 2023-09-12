@@ -66,7 +66,7 @@ const Login = (props) => {
         setToken(response.token);
 
         setTimeout(() => {
-          navigate('/courses');
+          navigate('/dashboard');
         }, 500);
       })
       .catch((err) => {
